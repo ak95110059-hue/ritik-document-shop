@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ritik Document Shop - आपका काम हमारी जिम्मेदारी</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">📄RITIK Document Shop</div>
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#add-service">Add Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>आपका काम हमारी जिम्मेदारी</h1>
+            <p>सभी प्रकार के दस्तावेज़, फॉर्म, सर्टिफिकेट बनवाएं। तेज़ और सस्ता!</p>
+            <button class="cta-btn" onclick="scrollToServices()">Services देखें</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>हमारी Services</h2>
+            <div id="services-container" class="services-grid">
+                <!-- Services dynamically load होंगी यहाँ -->
+            </div>
+        </div>
+    </section>
+
+    <section id="add-service" class="add-service">
+        <div class="container">
+            <h2>नई Service Add करें</h2>
+            <form id="service-form">
+                <div class="form-group">
+                    <label>Service का नाम:</label>
+                    <input type="text" id="service-name" placeholder="जैसे: आधार कार्ड, पैन कार्ड" required>
+                </div>
+                <div class="form-group">
+                    <label>Price (₹):</label>
+                    <input type="number" id="service-price" placeholder="100" required>
+                </div>
+                <div class="form-group">
+                    <label>विवरण (Optional):</label>
+                    <textarea id="service-desc" placeholder="क्या documents चाहिए..."></textarea>
+                </div>
+                <button type="submit">Service Add करें</button>
+            </form> Service photo Add
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>हमसे संपर्क करें</h2>
+            <div class="contact-info">
+                <div>📞 9266717349</div>
+                <div>📍 delhi utam nagr </div>
+                <div>⏰ सुबह 9 - रात 9</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024  ritik Document Shop. सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
